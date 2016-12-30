@@ -43,36 +43,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 32px;
   a {
     color: inherit;
   }
 }
 
-h2 {
-  font-size: 18px;
-}
-
-h3 {
-  font-size: 16px;
-}
-
-h4 {
-  font-size: 14px;
-  color: $gray;
-}
-
 p {
   margin: 15px 0;
+  line-height: 200%;
 }
 
 a {
   color: $darkWhite;
-  text-decoration: none;
+  text-decoration: underline;
 	cursor: pointer;
-  &:hover, &:active {
-    border-bottom: 1px solid $pink;
-  }
 }
 
 ul, ol {
@@ -202,7 +187,6 @@ img {
   width: 100%;
   margin: 50px 0 0 0;
   color: $darkWhite;
-  font-size: 14px;
 
   @include mobile {
     margin: 3px 0;
@@ -228,6 +212,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    text-decoration: none;
 
     @include mobile {
       margin: 0 10px;
@@ -253,9 +238,6 @@ nav {
   }
 
   a {
-    display: inline-block;
-    border-bottom: 1px solid $darkWhite;
-    margin-left: 25px;
     &:hover,&:active {
       border-bottom: 1px solid $pink;
     }
