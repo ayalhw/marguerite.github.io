@@ -58,13 +58,12 @@ p {
     color: $pink;
   }
   a {
-    background-color: #444;
-    padding: 5px;
-    color: $blue;
+    margin: 0 5px 0 5px;
+    color: #b1e051;
     text-decoration: none;
+    border-bottom: 1px dotted #d2d2d2;
     &:hover,&:active {
-      color: $pink;
-      text-decoration: underline;
+      color: #8fcc14;
     }
   }
 }
@@ -209,8 +208,6 @@ img {
 }
 
 nav {
-  float: right;
-  margin: 0; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 14px;
 
@@ -222,17 +219,18 @@ nav {
   }
 
   a {
-    margin-left: 20px;
     color: $lightGreen;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
     text-decoration: none;
+    border-right: 1px solid $lightGreen;
 
     @include mobile {
       margin: 0 10px;
       color: $lightGreen;
     }
+  }
+
+  a:last-child {
+    border-right: none;
   }
 }
 
