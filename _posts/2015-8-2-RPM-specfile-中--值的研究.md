@@ -1,5 +1,3 @@
-## RPM specfile 中 $1 值的研究
-
 研究这个问题是因为论坛上的一个讨论：[zypper reinstall package](https://forum.suse.org.cn/viewtopic.php?f=15&t=4004/)
 
 略过楼主的实现是否正确不谈（因为他不给我看 specfile 估计是公司的软件），简单来说可以分成几个子问题：

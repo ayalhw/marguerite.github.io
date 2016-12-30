@@ -1,7 +1,3 @@
-## Introducing the brand new nodejs-packaging
-
-
-
 There has been no activities for nodejs in openSUSE for a while. (Since 13.2) But it doesn't mean it's dead. It's actually evolving.
 
 Today the brand-new [nodejs-packaging](https://github.com/marguerite/nodejs-packaging) answers all the questions.
