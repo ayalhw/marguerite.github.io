@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGreen;
+  color: $darkGreen;
   font-weight: bold;
 
   line-height: 1.7;
@@ -69,11 +69,11 @@ p {
 }
 
 a {
-  color: $darkerGreen;
+  color: $darkGreen;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $lighterGreen;
+    color: $lightGreen;
   }
 }
 
@@ -155,8 +155,7 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 50px 0;
 
   @include mobile {
     text-align: center;
@@ -192,7 +191,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkerGreen;
+  color: $darkWhite;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -201,9 +200,11 @@ img {
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $darkerWhite;
-  font-size: 16px;
+  float: left;
+  width: 100%;
+  margin: 50px 0 0 0;
+  color: $darkWhite;
+  font-size: 14px;
 
   @include mobile {
     margin: 3px 0;
@@ -212,9 +213,9 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin: 0; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 14px;
 
   @include mobile {
     float: none;
@@ -225,14 +226,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $lightGreen;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $lightGreen;
     }
   }
 }
