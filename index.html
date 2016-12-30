@@ -6,7 +6,7 @@ layout: default
   <h1>最近更新</h1>
   {% for post in site.posts %}
     <article class="post">
-      <div class="entry">{{ post.date | date: '%B %d, %Y' }}	<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+      {{ post.date | date: '%B %d, %Y' }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </article>
   {% endfor %}
 </div>

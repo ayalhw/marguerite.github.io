@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkGreen;
+  color: $lightGreen;
   font-weight: bold;
 
   line-height: 1.7;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 20px;
   a {
     color: inherit;
   }
@@ -69,11 +69,11 @@ p {
 }
 
 a {
-  color: $darkGreen;
+  color: $darkWhite;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $lightGreen;
+    border-bottom: solid $pink;
   }
 }
 
@@ -242,17 +242,9 @@ nav {
 // .main
 //
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
 .post {
+  color: $darkWhite;
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -262,21 +254,20 @@ nav {
     font-style: italic;
   }
 
-  .comments {
-    margin-top: 10px;
+  a {
+    display: inline-block;
+    border-bottom: 1px solid $darkWhite;
+    margin-left: 25px;
+    color: $darkWhite;
   }
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+  .comments {
+    margin-top: 10px;
   }
 }
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {
