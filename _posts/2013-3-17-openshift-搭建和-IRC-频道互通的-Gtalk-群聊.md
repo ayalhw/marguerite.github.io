@@ -332,72 +332,75 @@ uncomment mongod 那两行可以连 mongod 一起重启。
 
 然后把以下内容保存为 text2html.sh，放在 $OPENSHIFT_DATA_DIR 下面然后 chmod +x。
 
+<pre>
     #!/bin/bash
-    echo "<!DOCTYPE html>
-    <html>
-    <head>
-    <meta charset='utf-8'>
-    <title>`date -R`</title>
-    <style>
-    body {
-        background: #dbe1ed;
-        font-family: "WenQuanYi Micro Hei",sans-serif;
-        font-size: 16px;
-        color: #333;
-    }
-    #content {
-       max-width: 900px;
-       margin: 5px auto;
-    }
-    p {
-      border: 1px solid #aaa;
-      padding: 2px 10px;
-      border-radius: 8px;
-      -moz-border-radius: 8px;
-      box-shadow: 0 8px 6px -6px #999;
-      line-height: 150%;
-    }
-    p:nth-child(odd) {
-       background: #92d841;
-       text-shadow: 0 1px 0 #adff4d;
-    }
-    p:nth-child(even) {
-      background: #d3d3d3;
-      text-shadow: 0 1px 0 #fff;
-    }
-    h2 {
-      margin: 5px auto;
-      text-shadow: 0 1px 0 #fff;
-      color: #555;
-      max-width: 900px;
-      text-align: center;
-    }
-    span {
-      display: block;
-      font-size: 11px;
-      color: #999;
-      magin: 0 auto 15px auto;
-      width: 900px;
-      text-align: center;
-      line-height: 200%;
-      text-shadow: 0 1px 0 #fff;
-    }
-    </style>
-    </head>
-    <body>"
+    echo "
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <meta charset='utf-8'>
+                    <title>`date -R`</title>
+                    <style>
+                        body {
+                            background: #dbe1ed;
+                            font-family: "WenQuanYi Micro Hei",sans-serif;
+                            font-size: 16px;
+                            color: #333;
+                        }
+                        #content {
+                            max-width: 900px;
+                            margin: 5px auto;
+                        }
+                        p {
+                            border: 1px solid #aaa;
+                            padding: 2px 10px;
+                            border-radius: 8px;
+                            -moz-border-radius: 8px;
+                            box-shadow: 0 8px 6px -6px #999;
+                            line-height: 150%;
+                        }
+                        p:nth-child(odd) {
+                            background: #92d841;
+                            text-shadow: 0 1px 0 #adff4d;
+                        }
+                        p:nth-child(even) {
+                            background: #d3d3d3;
+                            text-shadow: 0 1px 0 #fff;
+                        }
+                        h2 {
+                            margin: 5px auto;
+                            text-shadow: 0 1px 0 #fff;
+                            color: #555;
+                            max-width: 900px;
+                            text-align: center;
+                        }
+                        span {
+                            display: block;
+                            font-size: 11px;
+                            color: #999;
+                            magin: 0 auto 15px auto;
+                            width: 900px;
+                            text-align: center;
+                            line-height: 200%;
+                            text-shadow: 0 1px 0 #fff;
+                        }
+                    </style>
+                </head>
+            <body>"
     echo '<h2>openSUSE 中文社團聊天記錄'
     echo "`date -R`"
     echo '</h2><div id='content'>'
     cat "$1" | while read p; do
-      echo "<p>"
-      echo $p
-      echo "</p>"
+            echo "<p>"
+            echo $p
+            echo "</p>"
     done
     echo '</div>
-    <span>2013 版權所有 suse.ws。這是 openSUSE 中文社區的官方聊天室。</span>
-    <span>添加 talk@suse.ws 爲 Gtalk 好友或 IRC 加入 #opensuse-cn 頻道即可參與。</span>
-    </body>
-    </html>'
+                    <span>2013 版權所有 suse.ws。這是 openSUSE 中文社區的官方聊天室。</span>
+                    <span>添加 talk@suse.ws 爲 Gtalk 好友或 IRC 加入 #opensuse-cn 頻道即可參與。</span>
+            </body>
+        </html>'
+</pre>
 
 ###### 备份方案
 
