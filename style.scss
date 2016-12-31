@@ -109,17 +109,16 @@ img {
 
 blockquote {
   margin: 1.8em .8em;
-  border-left: 2px solid $gray;
+  border-left: 4px solid #404040;
+  border-bottom: 1px solid #404040;
   padding: 0.1em 1em;
-  color: $gray;
-  font-size: 18px;
-  font-style: italic;
+  color: #ccc;
+  background-color: #222;
 }
 
 table {
   border: 1px solid $gray;
   color: white;
-  text-align: middle;
   tr {
     border-bottom: 1px solid $gray;
   }
@@ -127,6 +126,12 @@ table {
     th {
 	background-color: $gray;
 	font-style: bold;
+	padding: 3px;
+    }
+  }
+  tbody {
+    td {
+	padding: 3px 8px 3px 3px;
     }
   }
 }
